@@ -1,4 +1,4 @@
-import { BACKGROUND_OPACITY_ATTR, BACKGROUND_OPACITY_MAX, BACKGROUND_OPACITY_VAR, BRAND_ATTR, BRAND_DEEPSEEK, COMPOSER_ATTR, COMPOSER_GAP_ATTR, COMPOSER_GAP_THEME, CONTEXT_DISPLAY_ATTR, CONTEXT_NUMBERS_ATTR, EFFORT_ACCENT_ATTR, FOOTER_ATTR, INTERFACE_FONT_SIZE_ATTR, INTERFACE_FONT_SIZE_VAR, MASCOT_ATTR, MASCOT_BRAND, MASCOT_CRAB, MASCOT_DEEPY, MOTION_ATTR, MOTION_FULL, MOTION_REDUCED, ONGOING_INDICATOR_ATTR, ONGOING_SIDE_ATTR, PAGE_ZOOM_ATTR, PAGE_ZOOM_VAR, PACKAGE_NAME, PALETTE_ATTR, PALETTE_CARD_ATTR, PREF_DEFAULTS, SEARCH_STYLE_ATTR, SETTINGS_ENTRY_FALLBACK, SIDEBAR_BRAND_ATTR, SIDEBAR_LAYOUT_ATTR, STATS_POSITION_ATTR, STATUS_MOTION_ATTR, TYPEFACE_ATTR } from '../constants'
+import { BACKGROUND_OPACITY_ATTR, BACKGROUND_OPACITY_MAX, BACKGROUND_OPACITY_VAR, BRAND_ATTR, BRAND_DEEPSEEK, COMPOSER_ATTR, COMPOSER_GAP_ATTR, COMPOSER_GAP_THEME, CONTEXT_DISPLAY_ATTR, CONTEXT_NUMBERS_ATTR, EFFORT_ACCENT_ATTR, FOOTER_ATTR, INTERFACE_FONT_SIZE_ATTR, INTERFACE_FONT_SIZE_VAR, MASCOT_ATTR, MASCOT_BRAND, MASCOT_CRAB, MASCOT_DEEPY, MOTION_ATTR, MOTION_FULL, MOTION_REDUCED, ONGOING_INDICATOR_ATTR, ONGOING_SIDE_ATTR, PAGE_ZOOM_ATTR, PAGE_ZOOM_VAR, PACKAGE_NAME, PALETTE_ATTR, PALETTE_CARD_ATTR, PREF_DEFAULTS, SEARCH_STYLE_ATTR, SETTINGS_ENTRY_FALLBACK, SIDEBAR_BRAND_ATTR, SIDEBAR_LAYOUT_ATTR, STATS_POSITION_ATTR, STATUS_MOTION_ATTR, THINKING_MARK_ATTR, TYPEFACE_ATTR } from '../constants'
 import { backgroundOpacityOf, projectBackgroundOpacity } from '../shared/background-opacity'
 import { interfaceFontSizeOf, projectInterfaceFontSize } from '../shared/interface-font-size'
 import { pageZoomOf, pageZoomText, projectPageZoomFactor } from '../shared/page-zoom'
@@ -109,6 +109,7 @@ const MIRRORS = [
   { key: 'composerBottomGap', attr: COMPOSER_GAP_ATTR, value: (prefs: Prefs) => prefs.composerBottomGap === COMPOSER_GAP_THEME ? false : prefs.composerBottomGap },
   { key: 'effortAccent', attr: EFFORT_ACCENT_ATTR, value: (prefs: Prefs) => prefs.effortAccent },
   { key: 'statusMotion', attr: STATUS_MOTION_ATTR, value: (prefs: Prefs) => prefs.statusMotion },
+  { key: 'thinkingMark', attr: THINKING_MARK_ATTR, value: (prefs: Prefs) => prefs.thinkingMark },
   // The page's scale is this attribute alone; the sheet's `zoom` reads it
   // through the property `projectPageZoomFactor` projects from it, written
   // right after the mirrors below. At 100% the attribute is taken off, and the

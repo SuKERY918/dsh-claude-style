@@ -1,3 +1,4 @@
+import { THINKING_MARK_DOTS, THINKING_MARK_SPARK } from '../../constants'
 import type { FeatureManifest } from '../../core/feature'
 
 export default {
@@ -30,6 +31,18 @@ export default {
     pref: 'statusMotion',
     control: 'status-paint',
     stillWhenReduced: true,
+  }, {
+    // The mark that leads the line: the Claude client's starburst, which opens
+    // and closes while the turn runs, or the four dots the line has carried.
+    tab: 'motion',
+    rank: 18,
+    pref: 'thinkingMark',
+    parent: 'chatWait',
+    title: 'thinkingMarkTitle',
+    choiceLabels: {
+      [THINKING_MARK_SPARK]: 'thinkingMarkSpark',
+      [THINKING_MARK_DOTS]: 'thinkingMarkDots',
+    },
   }],
   cases: ['chat-wait'],
   scenarios: ['waitLine', 'washLine'],

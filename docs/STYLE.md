@@ -566,6 +566,7 @@ edit the JSON, not the table.
 | `--dsh-claude-period-hold` | `840ms` | how long the reasoning window's text stands between two steps |
 | `--dsh-claude-period-dot-bounce` | `500ms` | one bounce of the waiting line's loader dots under the Claude brand, and the period each dot's own start is measured against |
 | `--dsh-claude-period-dot-line` | `1250ms` | one round trip of the waiting line's loader dots along their own lines, the motion the dots take while the turn is not thinking |
+| `--dsh-claude-period-spark` | `1200ms` | one open-and-close of the waiting line's starburst, the mark the Claude client shows while it thinks |
 | `--dsh-claude-ease-standard` | `ease` | feedback and surfaces: the default curve |
 | `--dsh-claude-ease-out` | `ease-out` | something arriving and settling: a fold's door, content entering the chat area, the landing mark, a hint appearing and leaving |
 | `--dsh-claude-ease-enter` | `cubic-bezier(0.34, 1.3, 0.64, 1)` | a message the reader sends growing into its row: the slight overshoot as it takes its full size |

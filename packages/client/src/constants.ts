@@ -64,6 +64,8 @@ export const SIDEBAR_PEEK_WIDTH_PROPERTY = '--dsh-claude-sidebar-peek-width'
 
 /** The waiting line's paint rides this attribute and the stylesheets decide it (features/chat-wait/chat-wait.css): the wording, the swap and the clock stay untouched. */
 export const STATUS_MOTION_ATTR = 'data-dsh-claude-status-motion'
+/** The mark that leads the waiting line: the starburst the Claude client shows while it thinks, or the four dots (features/chat-wait/chat-wait.css). */
+export const THINKING_MARK_ATTR = 'data-dsh-claude-thinking-mark'
 
 /** The document attributes the choices below resolve onto; the values themselves are in the table (contracts/prefs.ts). */
 export const PALETTE_ATTR = 'data-dsh-claude-palette'

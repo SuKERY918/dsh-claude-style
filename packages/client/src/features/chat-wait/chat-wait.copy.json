@@ -13,5 +13,8 @@
   "statusDetailTitle": { "zh": "精确状态行", "en": "Precise status line" },
   "statusDetailSampleRead": { "zh": "正在阅读 README.md", "en": "Reading README.md" },
   "statusDetailSampleCheckout": { "zh": "正在检出当前工作树", "en": "Checking out current tree" },
-  "statusDetailSampleThinking": { "zh": "正在思考", "en": "Thinking…" }
+  "statusDetailSampleThinking": { "zh": "正在思考", "en": "Thinking…" },
+  "thinkingMarkTitle": { "zh": "思考指示器", "en": "Thinking indicator" },
+  "thinkingMarkSpark": { "zh": "Claude 星芒", "en": "Claude spark" },
+  "thinkingMarkDots": { "zh": "四点", "en": "Four dots" }
 }

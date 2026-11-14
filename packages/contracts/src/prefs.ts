@@ -127,6 +127,14 @@ export const ONGOING_INDICATOR_RING = 'ring'
 export const ONGOING_INDICATOR_SHIMMER = 'shimmer'
 export const ONGOING_INDICATORS = [ONGOING_INDICATOR_BREATHE, ONGOING_INDICATOR_RING, ONGOING_INDICATOR_SHIMMER] as const
 
+/**
+ * The mark the waiting line draws while the turn runs: the starburst the Claude
+ * client shows while it thinks, or the four dots the line has always carried.
+ */
+export const THINKING_MARK_SPARK = 'spark'
+export const THINKING_MARK_DOTS = 'dots'
+export const THINKING_MARKS = [THINKING_MARK_SPARK, THINKING_MARK_DOTS] as const
+
 /** Leading uses the host slot shared with third-party marks; trailing uses the skin status column. */
 export const ONGOING_SIDE_LEFT = 'left'
 export const ONGOING_SIDE_RIGHT = 'right'
@@ -278,6 +286,8 @@ export const PREFS = {
   inlineCodeColor: { type: 'choice', values: INLINE_CODE_COLORS, default: INLINE_CODE_COLOR_PALETTE },
   motion: { type: 'choice', values: MOTION_MODES, default: MOTION_SYSTEM },
   statusMotion: { type: 'choice', values: STATUS_MOTIONS, default: STATUS_MOTION_SWEEP },
+  /** The mark the waiting line draws; `spark` is the starburst the Claude client shows while it thinks. */
+  thinkingMark: { type: 'choice', values: THINKING_MARKS, default: THINKING_MARK_SPARK },
   /** The two legacy words: `precise` is on and `simple` off. */
   statusDetail: { type: 'boolean', default: true, legacy: { precise: true, simple: false } },
   collapseFooter: { type: 'boolean', default: true },
